@@ -1,0 +1,40 @@
+/* Sidebar Button Look */
+.rozen-adv-item {
+    border-left: 3px solid #00b0ff !important;
+    background: rgba(0, 176, 255, 0.05) !important;
+    cursor: pointer;
+}
+
+/* The Secret Panel */
+#rozen-panel {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 350px;
+    height: 100vh;
+    background: #111;
+    z-index: 1000000;
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    padding: 30px;
+    color: white;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.7);
+    font-family: 'Arial', sans-serif;
+}
+
+#rozen-panel.active {
+    right: 0;
+}
+
+.rozen-tab-btn {
+    flex: 1;
+    padding: 10px;
+    background: #222;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rozen-tab-btn.active {
+    background: #00b0ff;
+}
